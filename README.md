@@ -54,26 +54,52 @@ This project demonstrates various ROS2 concepts including:
 
 ### Prerequisites
 
-- ROS2 (Tested on Jazzy)
-- Python 3.12
-- turtlesim package
+1. **Ubuntu 24.04 (Noble Numbat)**
+   ```bash
+   # Download and install Ubuntu 24.04 from
+   # https://ubuntu.com/download/desktop
+   ```
+
+2. **ROS2 Jazzy Jalisco**
+   ```bash
+   # Follow official ROS2 Jazzy installation instructions
+   # https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html
+   ```
+
+3. **Required Packages**
+   ```bash
+   # Install turtlesim
+   sudo apt install ros-jazzy-turtlesim
+   ```
 
 ### Installation
 
-1. Clone the repository:
+1. **Create a ROS2 Workspace**
    ```bash
-   git clone <repository-url>
-   cd turtlesim_project
+   mkdir -p ~/ros2_ws/src
+   cd ~/ros2_ws/src
    ```
 
-2. Build the packages:
+2. **Clone the Repository**
    ```bash
+   git clone https://github.com/Rounak7721/ROS2-Turtle-Catch-Game.git
+   cd ..
+   ```
+
+3. **Build the Packages**
+   ```bash
+   # Normal build
    colcon build
+   
+   # Or with symlink install (recommended for development)
+   colcon build --symlink-install
    ```
 
-3. Source the setup files:
+4. **Source the Workspace**
    ```bash
    source install/setup.bash
+   # Add to ~/.bashrc to make it permanent:
+   # echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
    ```
 
 ### Running the Game
