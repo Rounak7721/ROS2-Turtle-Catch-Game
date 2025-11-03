@@ -136,7 +136,7 @@ The game behavior can be customized through parameters in `turtle_bringup/config
 
 ## Project Structure
 ```
-turtlesim_project/
+turtle_project/
 ├── src/
 │   ├── turtle_bringup/         # Launch files and configuration
 │   │   ├── launch/
