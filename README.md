@@ -56,62 +56,63 @@ This project demonstrates various ROS2 concepts including:
 
 ## Getting Started
 
-### Prerequisites
+### System Setup
 
-1. **Ubuntu 24.04 (Noble Numbat)**
-   ```bash
-   # Download and install Ubuntu 24.04 from
-   # https://ubuntu.com/download/desktop
-   ```
+1. **Install Ubuntu 24.04**
+   - Download Ubuntu 24.04 from [official website](https://ubuntu.com/download/desktop)
+   - Install either as:
+     - Dual boot (recommended for better performance)
+     - Virtual Machine (using VirtualBox or VMware)
+   - Follow the installation wizard and restart your system
 
-2. **ROS2 Jazzy Jalisco**
+2. **Install ROS2 Jazzy**
    ```bash
-   # Follow official ROS2 Jazzy installation instructions
+   # Follow the official ROS2 Jazzy installation steps:
    # https://docs.ros.org/en/jazzy/Installation/Ubuntu-Install-Debians.html
-   ```
-
-3. **Required Packages**
-   ```bash
-   # Install turtlesim
+   
+   # After installation, install turtlesim package
    sudo apt install ros-jazzy-turtlesim
    ```
 
-### Installation
+### Project Setup
 
-1. **Create a ROS2 Workspace**
+1. **Create Project Folder**
    ```bash
-   mkdir -p ~/ros2_ws/src
-   cd ~/ros2_ws/src
+   # Create and navigate to project folder
+   mkdir -p ~/turtle_project
+   cd ~/turtle_project
    ```
 
-2. **Clone the Repository**
+2. **Clone Repository**
    ```bash
-   git clone https://github.com/Rounak7721/ROS2-Turtle-Catch-Game.git
-   cd ..
+   # Clone this repository
+   git clone https://github.com/Rounak7721/ROS2-Turtle-Catch-Game.git .
    ```
 
-3. **Build the Packages**
+3. **Build Project**
    ```bash
-   # Normal build
+   # Build all packages
    colcon build
-   
-   # Or with symlink install (recommended for development)
-   colcon build --symlink-install
    ```
 
-4. **Source the Workspace**
+4. **Setup Environment**
    ```bash
+   # Source the setup file
    source install/setup.bash
-   # Add to ~/.bashrc to make it permanent:
-   # echo "source ~/ros2_ws/install/setup.bash" >> ~/.bashrc
    ```
 
 ### Running the Game
 
-Launch the complete game using:
-```bash
-ros2 launch turtle_bringup turtle_catch.launch.xml
-```
+1. **Launch the Game**
+   ```bash
+   # Make sure you're in the project directory
+   cd ~/turtle_project
+   
+   # Launch the game
+   ros2 launch turtle_bringup turtle_catch.launch.xml
+   ```
+
+The game window will appear with the master turtle (turtle1). Other turtles will start spawning automatically, and turtle1 will begin catching them!
 
 ## Configuration
 
