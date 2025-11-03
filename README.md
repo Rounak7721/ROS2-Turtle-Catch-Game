@@ -4,14 +4,7 @@ A fun and interactive ROS2 project that implements a turtle catching game using 
 
 ## Demo
 
-<!-- HTML Video Embed -->
-<video width="640" height="480" controls>
-  <source src="assets/demovid.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-<!-- GitHub Markdown Video -->
-![Demo Video](assets/demo_vid.mp4)
+⬇️ [Download Demo Video](demo_vid.mp4)
 
 ## Project Overview
 
