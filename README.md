@@ -11,7 +11,7 @@ A fun and interactive ROS2 project that implements a turtle catching game using 
 </video>
 
 <!-- GitHub Markdown Video -->
-![Demo Video](assets/demovid.mp4)
+![Demo Video](assets/demo_vid.mp4)
 
 ## Project Overview
 
