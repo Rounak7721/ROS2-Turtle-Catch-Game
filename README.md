@@ -2,6 +2,10 @@
 
 A fun and interactive ROS2 project that implements a turtle catching game using the turtlesim simulator. The master turtle hunts and catches other randomly spawned turtles in the environment.
 
+## Demo
+
+https://github.com/Rounak7721/ROS2-Turtle-Catch-Game/assets/demo_vid.mp4
+
 ## Project Overview
 
 This project demonstrates various ROS2 concepts including:
@@ -17,7 +21,7 @@ This project demonstrates various ROS2 concepts including:
 
 1. **Turtle Controller** (`turtle_controller.py`)
    - Controls the master turtle's movement
-   - Implements P-controller for smooth navigation
+   - Implements simple P-controller for smooth navigation
    - Catches target turtles when in range
    - Customizable parameters for movement control
 
