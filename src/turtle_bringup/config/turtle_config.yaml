@@ -1,0 +1,24 @@
+# Turtlesim Node
+/turtlesim:
+  ros__parameters:
+    # Background Color Settings
+    background_r: 235 # range: 0 - 255
+    background_g: 240 # range: 0 - 255
+    background_b: 245 # range: 0 - 255
+
+# Turtle Spawner Node
+/turtle_spawner:
+  ros__parameters:
+    spawn_frequency: 2.0 # time interval in sec to spawn a turtle
+    turtle_name_prefix: "turtle" # naming a turtle eg: turtle1, turtle2
+    turtle_pen_off: 1 # 0 | 1 - turn on or off turtle pen
+
+# Turtle Controller Node
+/turtle_controller:
+  ros__parameters:
+    catch_closest_turtle_first: True # Will catch nearest turtle first, else first in list sequence
+    k_linear: 2.0 # linear constant, controls linear speed
+    k_angular: 3.0 # angular constant, controls angular speed
+    catch_radius: 0.5 # minimum raduis to declare a catch
+    master_pen_off: 0 # 0 | 1 - turn on or off master turtle pen
+    master_pen_width: 3 # master turtle pen width 

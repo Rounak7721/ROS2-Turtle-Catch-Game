@@ -1,0 +1,22 @@
+<launch>
+    <!-- Turtlesim Node -->
+    <node pkg="turtlesim" exec="turtlesim_node">
+        <param from="$(find-pkg-share turtle_bringup)/config/turtle_config.yaml" />
+    </node>
+
+    <!-- Turtle Spawner Node -->
+    <node pkg="turtle_catch" exec="turtle_spawner">
+        <param from="$(find-pkg-share turtle_bringup)/config/turtle_config.yaml" />
+    </node>
+
+    <!-- Turtle Monitor Node -->
+    <node pkg="turtle_catch" exec="turtle_monitor">
+        <param from="$(find-pkg-share turtle_bringup)/config/turtle_config.yaml" />
+    </node>
+
+    <!-- Turtle Controller Node -->
+    <node pkg="turtle_catch" exec="turtle_controller">
+        <param from="$(find-pkg-share turtle_bringup)/config/turtle_config.yaml" />
+    </node>
+
+</launch>
